@@ -1,7 +1,6 @@
 polars
 nbconvert 
-pybind11>=2.12
-numpy==2.0
+numpy<2.0.0
 matplotlib==3.5.1
 reportlab==3.6.6
 pytest==7.3.1

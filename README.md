@@ -23,6 +23,6 @@ Analyzed the following:
 - Salary Statistics by Experience Level
 
 ## Project Features
-1. Python script using Polars library to read the dataset and generate descriptive statistics with data visualization, finally summarize and create an analysis_results.md file.
+1. Python script using Polars library to read the dataset and generate descriptive statistics with data visualization, finally summarize and create an analysis_results.md file. (All Polars library calls, analysis, and plotting are done in the mylib/calculate_stat.py file)
 2. Creating test_script.py to test the script, test_lib.py to test the library, and finally using the nbval plugin for pytest to test all files includng ipynb.
 3. Generated a badge linked to GitHub actions.

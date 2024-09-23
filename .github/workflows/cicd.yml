@@ -1,0 +1,26 @@
+name: CI
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: install packages
+        run: make install
+      - name: format
+        run: make format
+      - name: lint
+        run: make lint
+      - name: test
+        run: make test
+      - name: run program and generate a markdown file
+        run: make run
+      - name: Push changes
+        run: make push

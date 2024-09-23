@@ -1,0 +1,11 @@
+polars
+nbconvert 
+numpy
+matplotlib==3.5.1
+reportlab==3.6.6
+pytest==7.3.1
+pytest-cov==4.0.0
+black==23.3.0
+ruff==0.0.270
+jupyter==1.0.0
+nbval==0.10.0
